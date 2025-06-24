@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Undedicated SMP - Minecraft Server</title>
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 3em;
+      color: #00ffaa;
+    }
+    .ip {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    .button {
+      background-color: #00a000;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #008800;
+    }
+    .banner {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎮 Undedicated SMP</h1>
+  <p class="ip">Server IP: <strong>Undedicated-Smp.aternos.me:55170</strong></p>
+  <button class="button" onclick="copyIP()">📋 Copy Server IP</button>
+
+  <div class="banner">
+    <h2>🔧 Live Server Status</h2>
+    <img src="https://status.mclive.eu/UndedicatedSMP/Undedicated-Smp.aternos.me/55170/banner.png" alt="Server Status">
+  </div>
+
+  <script>
+    function copyIP() {
+      navigator.clipboard.writeText("Undedicated-Smp.aternos.me:55170");
+      alert("✅ Server IP copied to clipboard!");
+    }
+  </script>
+
+</body>
+</html>
