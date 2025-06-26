@@ -2,57 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Undedicated SMP - Minecraft Server</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Tunnel Dashboard</title>
   <style>
     body {
-      background-color: #0f0f0f;
-      color: #ffffff;
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-    }
-    h1 {
-      font-size: 3em;
-      color: #00ffaa;
-    }
-    .ip {
-      font-size: 1.2em;
-      margin-bottom: 10px;
-    }
-    .button {
-      background-color: #00a000;
+      background: #0c0c1c;
       color: white;
-      padding: 12px 24px;
-      border: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+    .card {
+      background: #1e1e2f;
+      padding: 1.5rem;
       border-radius: 10px;
-      font-size: 18px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 0 10px #00000055;
+      margin-bottom: 1rem;
+    }
+    .title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #00d1ff;
+    }
+    .data {
+      font-size: 1rem;
+      margin: 0.25rem 0;
+    }
+    .btn {
+      background: #00d1ff;
+      color: black;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
       cursor: pointer;
-    }
-    .button:hover {
-      background-color: #008800;
-    }
-    .banner {
-      margin-top: 40px;
+      font-weight: bold;
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
-
-  <h1>🎮 Undedicated SMP</h1>
-  <p class="ip">Server IP: <strong>Undedicated-Smp.aternos.me:55170</strong></p>
-  <button class="button" onclick="copyIP()">📋 Copy Server IP</button>
-
-  <div class="banner">
-    <h2>🔧 Live Server Status</h2>
-    <img src="https://status.mclive.eu/UndedicatedSMP/Undedicated-Smp.aternos.me/55170/banner.png" alt="Server Status">
+  <div class="card">
+    <div class="title">Your Tunnel Info</div>
+    <div class="data">Public IP: <strong>203.0.113.42</strong></div>
+    <div class="data">Port: <strong>25565</strong></div>
+    <div class="data">Status: <strong>Connected</strong></div>
+    <button class="btn" onclick="alert('Tunnel disconnected!')">Disconnect</button>
   </div>
-
-  <script>
-    function copyIP() {
-      navigator.clipboard.writeText("Undedicated-Smp.aternos.me:55170");
-      alert("✅ Server IP copied to clipboard!");
-    }
-  </script>
-
+  <div class="card">
+    <div class="title">Coming Soon</div>
+    <div class="data">Tunnel region selection, stats, logs, etc.</div>
+  </div>
 </body>
 </html>
